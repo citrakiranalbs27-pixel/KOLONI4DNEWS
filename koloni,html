@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Online Landing Page</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #090909, #111827, #1e1b4b);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      background: rgba(0,0,0,0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    .logo {
+      font-size: 32px;
+      font-weight: bold;
+      color: cyan;
+      letter-spacing: 3px;
+    }
+
+    .nav-btn button {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 15px;
+      margin-left: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .login {
+      background: cyan;
+      color: black;
+    }
+
+    .register {
+      background: hotpink;
+      color: white;
+    }
+
+    .nav-btn button:hover {
+      transform: scale(1.05);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h1 {
+      font-size: 70px;
+      font-weight: bold;
+      background: linear-gradient(to right, cyan, hotpink);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      margin-top: 20px;
+      color: #ccc;
+      font-size: 20px;
+    }
+
+    .hero-buttons {
+      margin-top: 40px;
+    }
+
+    .hero-buttons button {
+      padding: 15px 35px;
+      border: none;
+      border-radius: 15px;
+      margin: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .play {
+      background: cyan;
+      color: black;
+    }
+
+    .games {
+      padding: 50px;
+    }
+
+    .games h2 {
+      text-align: center;
+      font-size: 45px;
+      margin-bottom: 50px;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      border-radius: 25px;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+      transition: 0.3s;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      font-size: 28px;
+    }
+
+    .card-content p {
+      margin-top: 15px;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    .card-content button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 15px;
+      background: hotpink;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .card-content button:hover {
+      background: deeppink;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #aaa;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin-top: 50px;
+    }
+
+    @media(max-width:768px){
+      .hero h1 {
+        font-size: 45px;
+      }
+
+      nav {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">GAMEZONE</div>
+
+    <div class="nav-btn">
+      <button class="login">LOGIN</button>
+      <button class="register">DAFTAR</button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>ONLINE GAME<br>NEXT LEVEL</h1>
+
+    <p>
+      Mainkan game favoritmu dengan tampilan modern dan futuristik.
+    </p>
+
+    <div class="hero-buttons">
+      <button class="play">MAIN SEKARANG</button>
+      <button>LIHAT GAME</button>
+    </div>
+  </section>
+
+  <section class="games">
+    <h2>GAME POPULER</h2>
+
+    <div class="card-container">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+          <h3>Cyber Battle</h3>
+          <p>
+            Game pertarungan futuristik dengan grafik ultra HD.
+          </p>
+
+          <button>PLAY NOW</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+          <h3>Racing X</h3>
+          <p>
+            Balapan cepat dengan efek neon modern.
+          </p>
+
+          <button>PLAY NOW</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1560253023-3ec5d502959f?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+          <h3>Fantasy Arena</h3>
+          <p>
+            Petualangan fantasy epik dengan dunia keren.
+          </p>
+
+          <button>PLAY NOW</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 GAMEZONE - All Rights Reserved
+  </footer>
+
+</body>
+</html>
